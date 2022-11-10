@@ -16,7 +16,7 @@ st.markdown(description)
 st.subheader('Inputs')
 
 # average_concurrent_metrics
-average_concurrent_metrics = st.number_input('average concurrent metrics', value=2500)
+average_concurrent_metrics = st.number_input('average concurrent metrics', value=2500, help='todo')
 
 # maximum_disk_size_mb
 c1r1, c2r1, c3r1 = st.columns(3)
