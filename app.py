@@ -1,7 +1,15 @@
 import streamlit as st
 
+# constants
+PER_METRIC_BYTES_64BIT = 165
+PER_PAGE_BYTES_64BIT = 90
+PER_EXTENT_BYTES_64BIT = 32
+PER_FILE_BYTES_64BIT = 88
+CACHE_OVERHEAD_PER_PAGE_BYTES_64BIT = 144
+DISK_OVERHEAD_PERCENTAGE_64BIT = 0.11
+
 # title & logo
-st.image('static/logo.png', width=250)
+st.image('static/logo.png', width=400)
 st.header('Netdata Storage Calculator')
 
 # description
