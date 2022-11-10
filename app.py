@@ -1,5 +1,12 @@
 import streamlit as st
 
+# title & logo
+st.title('Netdata Storage Calculator')
+st.image('static/logo.png', width=250)
+
+# description
+st.markdown('Experiment with the inputs below to come up with the best settings for your use case.')
+
 # inputs
 average_concurrent_metrics = st.number_input('average concurrent metrics', value=2500)
 
