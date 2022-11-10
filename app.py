@@ -1,13 +1,21 @@
 import streamlit as st
 
 # title & logo
-st.title('Netdata Storage Calculator')
 st.image('static/logo.png', width=250)
+st.header('Netdata Storage Calculator')
 
 # description
-st.markdown('Experiment with the inputs below to come up with the best settings for your use case.')
+description = """
+Experiment with the inputs below to come up with the best settings for your use case. 
+
+Be sure to [read the docs](https://learn.netdata.cloud/docs/store/change-metrics-storage) first.
+"""
+st.markdown(description)
 
 # inputs
+st.subheader('Inputs')
+
+# average_concurrent_metrics
 average_concurrent_metrics = st.number_input('average concurrent metrics', value=2500)
 
 # maximum_disk_size_mb
@@ -27,6 +35,9 @@ c1r3, c2r3, c3r3 = st.columns(3)
 page_cache_size_mb_tier_0 = c1r3.number_input('page cache size (MB)  - Tier 0', value=64, help='todo')
 page_cache_size_mb_tier_1 = c2r3.number_input('page cache size (MB)  - Tier 1', value=36, help='todo')
 page_cache_size_mb_tier_2 = c3r3.number_input('page cache size (MB)  - Tier 2', value=36, help='todo')
+
+# outputs
+st.subheader('Outputs')
 
 # dump inputs to screen
 st.write('average_concurrent_metrics = ', average_concurrent_metrics)
