@@ -41,6 +41,8 @@ description = """
 Experiment with the inputs below to come up with the best settings for your use case. 
 
 Be sure to [read the docs](https://learn.netdata.cloud/docs/store/change-metrics-storage) first.
+
+Note: A Python notebook version of the calculator can be found [here](https://github.com/netdata/netdata-storage-calculator/blob/main/calculator.ipynb) if you would like to customize it or easily step through the calculations.
 """
 st.markdown(description)
 
