@@ -183,10 +183,10 @@ estimated_dbengine_tier_2_update_every_iterations = update_every_sec_tier_2 / up
 
 st.subheader('Outputs')
 
-#output_message = f'Netdata will store an estimated **{round(estimated_data_points_stored):000,}** data points (**{round(estimated_points_per_metric):000,} points/metric**) '
-#output_message += f'for a maximum of **{round(estimated_maximum_days):000,} days**, utilizing **{round(estimated_disk_storage_gb,2):000,} GB** of disk storage '
-#output_message += f'and **{round(estimated_ram_mb):000,} MB** of RAM.'
-output_message += f'for a maximum of **{round(metric_retention_days_tier_0):000,} days (T0)**, **{round(metric_retention_days_tier_1):000,} days (T1)**, **{round(metric_retention_days_tier_2):000,} days (T2)** utilizing **{round(estimated_disk_storage_gb,2):000,} GB** of disk storage '
+output_message = f'Netdata will store an estimated **{round(estimated_data_points_stored):000,}** data points (**{round(estimated_points_per_metric):000,} points/metric**) '
+output_message += f'for a maximum of **{round(estimated_maximum_days):000,} days**, utilizing **{round(estimated_disk_storage_gb,2):000,} GB** of disk storage '
+output_message += f'and **{round(estimated_ram_mb):000,} MB** of RAM '
+output_message += f'for a maximum of **{round(metric_retention_days_tier_0):000,} days (T0)**, **{round(metric_retention_days_tier_1):000,} days (T1)**, **{round(metric_retention_days_tier_2):000,} days (T2)**.'
 
 output_netdata_conf = f"""
 # Enter the following in your agent's netdata.conf
